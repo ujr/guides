@@ -1,0 +1,7 @@
+{
+  "default": true,
+  "heading-style": { "style": "atx" },
+  "no-multiple-blanks": false,
+  "line-length": { "tables": false },
+  "code-block-style": false
+}
