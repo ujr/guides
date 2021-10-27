@@ -18,12 +18,13 @@ strict rules. Always use your own judgement.
 1. Documentation
 1. Licensing
 1. Rationale
-1. References and Bibliography
-1. Appendix: ...
+1. Bibliography and References
+1. Appendix: Pike on Complexity
+1. Appendix: Your Project Guidelines
 
 ## Complexity
 
-> Controlling complexity is the essence of computer programming.  
+> Controlling complexity is the essence of computer programming.
 > (B.W. Kernighan)
 
 Therefore:
@@ -32,6 +33,15 @@ Write **highly cohesive** but **loosely coupled** components, and
 **build on abstractions** but avoid premature generalization.
 
 Follow the guiding principles KISS, YAGNI, and DRY.
+
+- KISS (Keep It Simple, Stupid):
+  systems work best when they are simple.
+- YAGNI (You Ain't Gonna Need It):
+  implement things only when you need them
+  (because you cannot predict the future).
+- DRY (Don't Repeat Yourself):
+  avoid repetition of code or information,
+  everything should have a single authoritative source.
 
 Address complexity at all levels:
 architecture, solution design, algorithms, files, and code.
@@ -271,38 +281,46 @@ any single aspect of a program is called a *cross-cutting concern*.
 Typical examples include:
 logging, tracing, security, error handling, caching, monitoring.
 
-Logging guidelines:
+**Logging** is an invaluable diagnostic tool as it provides context
+to user error reports. As audit logging it can also be used to gain
+insight into a user's behaviour—but beware of ethical considerations
+and privacy regulations. Here are some guidelines:
 
 - always have some logging functionality
 - if your product is software-as-a-service, log to stdout and/or stderr
-- if your product is a self-contained applicatoin, use a logging library
+- if your product is a self-contained application, use a logging library
   (such as log4net, but do your evaluation)
-- library code ust not configure logging—this is under application control!
+- library code must not configure logging—this is under application control!
 - avoid custom log levels (usually, TRACE, DEBUG, INFO, WARN, ERROR
   should suffice)
+- do not log sensitive information (such as credentials or session keys)
 - utility methods should not log except at DEBUG level
 - when a component logs an ERROR, it should also throw an exception
 - beware of performance: message formatting in an inner loop can
   incur a substantial overhead!
 
-Logging is an invaluable diagnostic tool as it provides context to
-user error reports. As audit logging it can also be used to gain
-insight into a user's behaviour—but beware of ethical considerations
-and privacy regulations.
-
-Error handling guidelines
+**Error handling** guidelines
 
 - error handling is a separate concern
 - error handling should not obscure the main logic
 - use exceptions instead of returning error codes
 - throwing an exception is often more appropriate than returning null
 
-Security TODO
+**Security** depends very much on requirements, the type of
+software being developed, and the technologies being used.
+Some general guidelines apply nevertheless:
+
+- validate all user input
+- keep things simple and fail early
+- do not log or otherwise disclose sensitive information
+- do serious (penetration) testing
+- look at security from an architectural point of view:
+  define at what layer what access controls apply
 
 ## Documentation
 
 - always have a README file at the root level of your codebase
-- include developer documentation in the codebase (doc/develop/...)
+- include developer documentation in the codebase
 - use Markdown (*.md) to have it automatically rendered by common
   source control systems
 - keep user documentation in the codebase if you can afford keeping
@@ -311,14 +329,13 @@ Security TODO
 
 ## Licensing
 
-- always have a LICENSE file at the root level of your codebase,
-  set copyright year and copyright owner as appropriate
+- always have a LICENSE file at the root level of your codebase
+- set copyright year and copyright owner as appropriate
 - follow your employer's requirements and guidelines
 - do not add a license at the start of each source file
 - for maximum reusability, choose a permissive open-source license
-  such as MIT or BSD or Apache
-
-TODO refer to appendix or sep doc about Copyright and Licensing
+  (MIT or BSD or Apache) or release your software into the public
+  domain (use The Unlicense).
 
 ## Rationale
 
@@ -339,12 +356,26 @@ sometimes “by history”, and sometimes there is a real reason.
 
 This bibliography is certainly biased, incomplete, and partially
 off-topic. Indeed, it is a personal choice of a few texts I consider
-worth reading.
+worth reading. Consider assembling your own list for your project.
+The list here is ordered by year of first publication.
 
-- Fred Brooks, *Mythical Man Month. Essays on Software Engineering*,
+- Fred Brooks,
+  *Mythical Man Month. Essays on Software Engineering*,
   Addison-Wesley 1975, 1982, 1995. The well-known “Brooks Law”
   that adding people to a late software project makes it later
   is the core of the first essay in the book.
+  [Amazon](https://www.amazon.com/dp/0201835959)
+
+- Abelson and Sussman,
+  *Structure and Interpretation of Computer Programs*,
+  MIT Press 1984, 2nd ed. 1996. Also known as “SICP” it teaches
+  fundamental principles of computer programming using the language
+  Scheme. Available online at <http://mitpress.mit.edu/sicp>
+
+- Rob Pike, *Notes on Programming in C*, 1989,
+  [archived at Lysator](https://www.lysator.liu.se/c/pikestyle.html).
+  This is the full paper from which the *Pike on Complexity* appendix
+  is an excerpt.
 
 - Eric S. Raymond, *The Cathedral and the Bazaar*, 1999.
   An essay on two different software engineering methods,
@@ -352,16 +383,22 @@ worth reading.
   on the surprising success of Linux, which is developed by
   a loose bunch of seemingly uncoordinated individuals from
   around the world.
+  [Amazon](https://www.amazon.com/dp/0596001088) and
+  [online](http://www.catb.org/esr/writings/cathedral-bazaar/)
 
-- Robert C. Martin, *Clean Code. A Handbook of Agile Software
-  Craftsmanship*. Pearson 2008.
+- Robert C. Martin,
+  *Clean Code. A Handbook of Agile Software Craftsmanship*,
+  Pearson 2008.
   A classic about writing readable and maintainable code,
   with a strong focus on object-oriented programming and Java.
+  [Amazon](https://www.amazon.com/dp/0132350882)
 
-- Rob Pike, *Notes on Programming in C*, 1989,
-  [archived at Lysator](https://www.lysator.liu.se/c/pikestyle.html).
-  This is the full paper from which the *Pike on Complexity* appendix
-  is an excerpt.
+- Erich Gamma et al.,
+  *Design Patterns. Elements of Reusable Object-Oriented Software*,
+  Addison-Wesley 1994.
+  Also known as the “GoF (Gang of Four) patterns”.
+  [Amazon](https://www.amazon.com/dp/0201633612) and
+  [Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns).
 
 - [Python Logging HOWTO](https://docs.python.org/3/howto/logging.html).
   If unfamiliar with logging, read this for a general appreciation
@@ -379,6 +416,9 @@ are recommended for follow up:
 
 - EditorConfig at <https://editorconfig.org>
 - The Twelve-Factor App at <https://12factor.net>
+- 3A–Arrange, Act, Assert at <https://xp123.com/articles/3a-arrange-act-assert>
+- Apache logging services at <http://logging.apache.org/>
+- [Copyright and Licensing](./CopyrightNotes.md)
 - [Markdown Style Guide](./MarkdownStyle.md)
 
 
@@ -431,11 +471,26 @@ on how to cope with complexity:
 >
 > **Rule 6.**  There is no Rule 6.
 
-## Appendix: Copyright and Licensing
+## Appendix: Your Project Guidelines
 
-TODO (separate document may be more appropriate)
+It is useful if a software project has guidelines for development.
+It is useful if these guidelines are tuned to the specifics of
+the project, but do not neglect the general guidelines of the craft.
+Therefore, it should prove useful to build project guidelines in
+layers, e.g. like this:
 
-[12factor]: https://12factor.net/
+1. Project-specific guidelines (stored in codebase)
+2. Language/technology-specific guidelines
+   (referenced from project guidelines)
+3. General programming guidelines such as this document
+   (referenced from project guidelines)
+
+As experience is gained, the guidelines should be updated
+to reflect new knowledge and practices. Always update the
+guidelines at the appropriate level; this way the more
+general guidelines are automatically available to all your
+other software projects.
+
 [OneFlow]: http://endoflineblog.com/oneflow-a-git-branching-model-and-workflow
 [GitFlow]: http://nvie.com/posts/a-successful-git-branching-model/
 [GitHubFlow]: https://guides.github.com/introduction/flow/
