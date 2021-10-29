@@ -418,8 +418,10 @@ are recommended for follow up:
 - The Twelve-Factor App at <https://12factor.net>
 - 3A–Arrange, Act, Assert at <https://xp123.com/articles/3a-arrange-act-assert>
 - Apache logging services at <http://logging.apache.org/>
+- [Glossary](./Glossary.md) of programming
 - [Copyright and Licensing](./CopyrightNotes.md)
 - [Markdown Style Guide](./MarkdownStyle.md)
+- [Culture](./Culture.md) around programming
 
 
 ## Appendix: Pike on Complexity
