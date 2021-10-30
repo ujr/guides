@@ -35,6 +35,8 @@ and talk of *yet another TLA* (Three-Letter-Acronym).
 
 **API** = Application Programming Interface, ... (vs ABI)
 
+**CI/CD** = Continuous Integration / Continuous Deployment, ...
+
 **DDD** = Domain Driven Design, after the 2003 book of the same
 name by Eric Evans. ...
 
@@ -49,7 +51,9 @@ of a domain expert.
 
 **IDE** = Integrated Development Environment, ... vs Editor, ...
 
-**MVP** = Minimum Viable Product, ...
+**MVP** = Minimum Viable Product, provides just enough features
+to be usable by early adopters who then provide feedback to drive
+further development.
 
 **POCO** = Plain Old CLR Object  
 **POJO** = Plain Old Java Object, an ordinary object,
@@ -65,10 +69,16 @@ runtime (CLR or JVM) itself. Plain Old Objects are a good thing!
 together, tests being just slightly ahead. Keep the system working
 (all tests succeed) at all times, even during large refactorings.
 
+**TL;DR** = Too Long; Didn't Read. Used (a) to introduce a short
+summary of a lengthy text, and (b) to indicate that you did not read
+such a text.
+
 **TODO** = To Do, a comment in code that something needs review;
 e.g. `/* TODO dirty hack */`
 
 **UI/UX** = User Interface / User Experience, ...
+
+**Waterfall** = ...
 
 **XP** = Extreme Programming, a software development methodology, ...
 

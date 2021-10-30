@@ -2,14 +2,17 @@
 # General Guidelines
 
 This document gives some general guidelines for the
-practical software programmer. These guidelines are
-heuristics to help write good programs; they are not
-strict rules. Always use your own judgement.
+practical software programmer. They are not specific
+to any particular programming language or technology.
+Guidelines are heuristics to help write good programs;
+they are not strict rules. Always use your own judgement.
 
+1. Principles
 1. Complexity
 1. Codebase
 1. Dependencies
 1. Configuration
+1. Automation
 1. Formatting
 1. Naming
 1. Comments
@@ -22,17 +25,11 @@ strict rules. Always use your own judgement.
 1. Appendix: Pike on Complexity
 1. Appendix: Your Project Guidelines
 
-## Complexity
+## Principles
 
-> Controlling complexity is the essence of computer programming.
-> (B.W. Kernighan)
-
-Therefore:
-Aim for **self-documenting code** and strict **separation of concerns**.
-Write **highly cohesive** but **loosely coupled** components, and
-**build on abstractions** but avoid premature generalization.
-
-Follow the guiding principles KISS, YAGNI, and DRY.
+Principles are the condensed experience of others; they can be
+effective guidelines, but are no replacement for your own
+experience. Here are a few:
 
 - KISS (Keep It Simple, Stupid):
   systems work best when they are simple.
@@ -42,6 +39,17 @@ Follow the guiding principles KISS, YAGNI, and DRY.
 - DRY (Don't Repeat Yourself):
   avoid repetition of code or information,
   everything should have a single authoritative source.
+- Fail early: it will lead you closer to the root cause.
+
+## Complexity
+
+> Controlling complexity is the essence of computer programming.
+> —B.W. Kernighan
+
+Therefore:
+Aim for **self-documenting code** and strict **separation of concerns**.
+Write **highly cohesive** but **loosely coupled** components, and
+**build on abstractions** but avoid premature generalization.
 
 Address complexity at all levels:
 architecture, solution design, algorithms, files, and code.
@@ -85,7 +93,7 @@ whatever). The idea is that on any development and build machine,
 after a checkout of the codebase the product can be built and
 automated tests can be run. Here are some guidelines:
 
-- always keep the codebase in revision control (e.g. Git)
+- always keep the codebase in a source control system (e.g. Git)
 - keep codebase and product in a one-to-one relation
 - include all artifacts needed to build the product: all source
   files, non-code assets, test data, and build tools (except
@@ -101,7 +109,7 @@ automated tests can be run. Here are some guidelines:
 - prefer flat file structures over deep nesting
 - consider having a “commons” area for reusable components
   (you may reuse them in your other projects)
-- keep the revision control history as linear as possible
+- keep the source control system history as linear as possible
 - avoid long-living branches (prefer [OneFlow][OneFlow] over
   [GitFlow][GitFlow] and be pragmatic, [GitHub flow][GitHubFlow]
   works with pull requests)
@@ -111,7 +119,7 @@ The top-level of a codebase looks like this (or a subset):
 ```text
 README.md           always have a README, prefer markdown
 LICENSE             plain text file but no file extension
-.gitignore          files to exclude from revision control
+.gitignore          files to exclude from source control
 .editorconfig       basic formatting rules
 src/                source code files
 doc/                technical documentation    (1)
@@ -159,6 +167,20 @@ information. Security requirements may prohibit the use of
 environment variables for credentials, in which case a specific
 credential store could be used (and an environment variable to
 reference a location within this store).
+
+## Automation
+
+The benefit of automation is not so much for the efficiency
+gainend than for reproducability and avoidance of human error.
+Therefore:
+
+- building is one step (a command or a button click)
+  and works right after checkout
+- running all unit tests is one step
+
+Continuous integration and continuous delivery (CI/CD) is
+where you want to go and an automated build is the necessary
+prerequisite.
 
 ## Formatting
 
@@ -342,6 +364,15 @@ Some general guidelines apply nevertheless:
 Guidelines say how, not why. Sometimes they are random choices,
 sometimes “by history”, and sometimes there is a real reason.
 
+- Fail Early is a useful guideline. But in a sense, it
+  contradicts the Robustness Principle (Postel's Law).
+  Robustness is certainly a desirable property of any
+  program, but it fosters sloppy input. The dilemma might
+  be resolved by seeing that making a program robust requires
+  some effort, whereas failing early is a cheap matter of
+  discipline. Go for robustness if you can afford it; otherwise
+  fail early (raise an error whenever something looks suspicious).
+
 - Whether or not to use the BOM (byte-order-mark) with UTF-8
   is depated. On Windows there is a tendency to use it, while
   in Web projects there is a strong tendency to not use it.
@@ -416,6 +447,7 @@ are recommended for follow up:
 
 - EditorConfig at <https://editorconfig.org>
 - The Twelve-Factor App at <https://12factor.net>
+- OneFlow blog article at <https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow>
 - 3A–Arrange, Act, Assert at <https://xp123.com/articles/3a-arrange-act-assert>
 - Apache logging services at <http://logging.apache.org/>
 - [Glossary](./Glossary.md) of programming
