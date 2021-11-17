@@ -47,6 +47,13 @@ the deployment in the customer's production environment.
 **CLI** = Command Line Interface, once the only way to interact
 with a system, now again popular at least for developer tools.
 
+**CQS** = Command/Query Separation, a principle stating that
+a method should either be a *command* that changes something
+or a *query* that returns something (but without changing
+anything). On a larger scale also known as **CQRS** for
+Command/Query Responsibility Separation, where the same
+principle is applied to objects, components, or subsystems.
+
 **DDD** = Domain Driven Design, after the 2003 book of the same
 name by Eric Evans. A high-level software design approach that
 attempts to build software by representing the concepts and terms
@@ -101,6 +108,20 @@ represent some state (like a file on the server).
 **SDK** = Software Development Kit, a set of tools, libraries,
 templates, and documentation to build applications for some
 platform.
+
+**SOLID** = an acronym for five common design principles
+in (mostly object-oriented) programming:
+
+- Single Responsibility Principle
+  (each class should have a single responsibility)
+- Open-Closed Principle
+  (be open for extension, but closed for modification)
+- Liskov Substitution Principle (a derived class can always
+  be substituted for a base class without any other modification)
+- Interface Segregation Principle
+  (prefer many specific interfaces over one general-purpose interface)
+- Dependency Inversion Principle
+  (depend on abstractions, not on implementations)
 
 **TDD** = Test Driven Development: write tests and business code
 together, tests being just slightly ahead. Keep the system working
@@ -166,6 +187,31 @@ is done, the entire system according to plan may be obsolete.
 
 ## Concepts
 
+**Architectural pattern,** a structuring schema for software.
+Examples: layers, pipes-and-filters, model-view-controller,
+broker, CQRS.
+
+**Composition,** the general concept of combining simpler
+elements to build a more complicated component. ......... (examples)
+
+**Dependency Injection** (DI) is the principle that dependencies
+of an object should be "injected" from the outside, not created
+or searched by the object itself. In practice, injection means
+passing an argument to the constructor or setting a property.
+The benefit of dependency injection is to avoid hidden dependencies,
+to allow independent testing and mocking.
+
+**Deployment** is the act of putting software into operation
+by bringing it into its execution environment, traditionally
+installation on a computer.
+
+**Design pattern,** a generic and reusable solution to a commonly
+occurring problem in (usually object-oriented) programming.
+Examples include: Adapter, Builder, Command, Iterator, Observer,
+Visitor. It is generally recommended to use the design pattern
+name part of the class name that implements such a pattern.
+Beware that inappropriate use of patterns may increase complexity.
+
 **Feeping Creaturism,** a word play on **creeping featurism,**
 more prosaically known as **feature creep,** the excessive
 addition and accumulation of features to a product, often
@@ -175,3 +221,11 @@ far beyond creating any real value.
 an elegant system is recreated a second time, it tends to
 become over-engineered and bloated. The term first appeared
 in Brooks's *Mythical Man-Month* in 1975.
+
+## Dictionarly
+
+| English | German |
+|---|---|
+| Deployment | Softwareverteilung |
+| Design pattern | Entwurfsmuster |
+
