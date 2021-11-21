@@ -15,6 +15,13 @@
   a site with implementations of the same task
   in many languages
 
+## Knowledge
+
+- The iSAQB Glossary of Software Architecture Terminology
+  is naturally more architecture focused but still contains
+  many software development relevant entries.
+  <https://leanpub.com/isaqbglossary/read>
+
 ## Security
 
 - Check your web site's security with <https://observatory.mozilla.org>

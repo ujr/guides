@@ -431,6 +431,10 @@ The list here is ordered by year of first publication.
   [Amazon](https://www.amazon.com/dp/0201633612) and
   [Wikipedia](https://en.wikipedia.org/wiki/Design_Patterns).
 
+- Eric Evans,
+  *Domain-Driven Design: Tackling Complexitx in the Heart of Software*,
+  Addison-Wesley, 2004.
+
 - [Python Logging HOWTO](https://docs.python.org/3/howto/logging.html).
   If unfamiliar with logging, read this for a general appreciation
   of logging; all common logging libraries use similar concepts
