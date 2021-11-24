@@ -264,6 +264,27 @@ Here are some guidelines:
 - for each test, follow the 3A pattern: arrange, act, assert
 - tests are not trials: they are expected to run successfully!
 
+**Integration tests** operate on two or more components to test
+they work together as designed. They may include infrastructure
+concerns and take more work for setup. Still the same guidelines
+as for unit tests apply.
+
+**End-to-end tests** operate on the user interface level:
+
+- automation needs simulation of user input and may be
+  too much effort; alternatively:
+- establish a smoke test workflow (test protocol as part
+  of the code base)
+
+**Load tests** see if the product can handle the required workload.
+As a special case, **stress tests** see if the product recovers
+gracefully from extreme (more than the expected or specified)
+workloads.
+
+**Regression tests** ensure that a problem will not occur again.
+They may be realised at the unit test level or a higher level.
+At the very least document them in a test protocol.
+
 **Learning tests** are experiments to check your understanding
 of an API, engraving your knowledge into some simple unit tests.
 They are also useful to detect incompatible changes in 3rd party
@@ -273,23 +294,7 @@ APIs later on (in this sense they are also called *boundary tests*).
 - you may keep them close to your unit tests, but don't mix them
 - ignore them on automatic execution if they are known to break
 
-**End-to-end tests** operate on the user interface level:
-
-- automation needs simulation of user input and may be
-  too much effort; alternatively:
-- establish a smoke test workflow (test protocol as part
-  of the code base)
-
-**Regression tests** ensure that a problem will not occur again.
-They may be realised at the unit test level or a higher level.
-At the very least document them in a test protocol.
-
-**Load tests** see if the product can handle the required workload.
-
-**Stress tests** see if the product recovers gracefully from
-extreme (more than expected or specified) workloads.
-
-Testing is surrounded by a number of methodologies such as
+Testing is surrounded by a number of **methodologies** including
 TDD (write unit test first), BDD (behaviour: given-when-then),
 ATDD (acceptance tests first). You often cannot afford strictly
 following some methodology, but you should know they exist. Note
