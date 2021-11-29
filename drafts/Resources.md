@@ -14,6 +14,10 @@
 - Rosetta Code at <http://rosettacode.org>,
   a site with implementations of the same task
   in many languages
+  
+## Designing
+
+- Best practices for RESTful APIs at <https://restfulapi.net/>
 
 ## Knowledge
 
