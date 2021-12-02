@@ -234,8 +234,13 @@ formatting rules and is understood by all major editors.
 - always increment the version whenever a build leaves the development team
 - consider automatic version increment
 
-See <https://semver.org/> about semantic versioning.  
-See <https://calver.org/> about calendar versioning.
+Semantic versioning is useful for dependency management because
+it clearly states what a version increment means for compatibility.
+See <https://semver.org/> about semantic versioning.
+
+For an end-user a calendar (date) based version number is probably
+more meaningful and therefore preferred. See <https://calver.org/>
+for different schemes of calendar versioning.
 
 ## Testing
 
