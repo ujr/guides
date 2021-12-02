@@ -42,6 +42,8 @@ of the plain text. They are certainly subjective.
 - Prefer `**bold**` and `*italic*` over `__bold__` and `_italic_`
   (reason: the latter works less reliably when used within words).
 - Many renderers offer `~~strikethrough~~` for ~~strikethrough~~.
+- Some renderers offer `++inserted++` and `--deleted--`
+  (not portable, stay away).
 - Underlining is not generally offered; stay away.
 
 You may have to escape an underscore or an asterisk
@@ -74,7 +76,7 @@ editors nicely highlight headings anyway.
 - Use a blank line before and after a list.
 
 To avoid starting a (nested) list if your text starts
-with an ordinal number, escape the period like `12. Blah`.
+with an ordinal number, escape the period like `12\. Blah`.
 
 For nested lists, place the number or bullet
 in the same column as the outer text starts.
