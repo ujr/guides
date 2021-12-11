@@ -401,7 +401,7 @@ worth reading. Consider assembling your own list for your project.
 The list here is ordered by year of first publication.
 
 - Fred Brooks,
-  *Mythical Man Month. Essays on Software Engineering*,
+  *The Mythical Man Month. Essays on Software Engineering*,
   Addison-Wesley 1975, 1982, 1995. The well-known “Brooks Law”
   that adding people to a late software project makes it later
   is the core of the first essay in the book.
@@ -468,6 +468,7 @@ are recommended for follow up:
 - [Copyright and Licensing](./CopyrightNotes.md)
 - [Markdown Style Guide](./MarkdownStyle.md)
 - [Culture](./Culture.md) around programming
+- [Resources](./Resrouces.md) for daily work
 
 
 ## Appendix: Pike on Complexity

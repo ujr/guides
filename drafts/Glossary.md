@@ -202,6 +202,10 @@ is done, the entire system according to plan may be obsolete.
 
 ## Concepts
 
+**12-Factor App:** best practices for developing SaaS (cloud)
+applications. Published by Heroku developers around 2012.
+See <https://12factor.net>
+
 **Aggregation:** a form of association between objects in OOP
 that represents a whole/part relationship, where the parts can
 live independently of the whole.
