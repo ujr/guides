@@ -39,13 +39,17 @@ public domain, you must clearly say so—and because “public domain”
 might not be interpreted in the sense stated here, it is better
 to include an explicit license that grants all rights to everybody.
 
-Einige Worte auf deutsch: Copyright wird mit **Urheberrecht**
-übersetzt, bedeutet aber eher ein Nutzungsrecht unabhängig vom Recht,
-Urheber eines Werkes zu sein. Der angelsächsische Begriff “public
-domain” wird mit “Gemeinfreiheit” übersetzt und bedeutet, dass der
-Urheber eines Werkes kein exklusives Nutzungsrecht hat (weil er schon
-lange gestorben ist oder explizit auf dieses Recht verzichtet) und das
-Werk somit von jedermann und ohne Genehmigung verwendet werden kann.
+Einige Worte auf deutsch:
+Copyright ist ein Monopolrecht zugunsten des Schöpfers (oder
+Rechteinhabers). Eine Lizenz erlaubt ihrem Inhaber die Nutzung
+ohne dieses Monopolrecht zu verletzen.
+Copyright wird mit **Urheberrecht** übersetzt, bedeutet aber eher
+ein Nutzungsrecht unabhängig vom Recht, Urheber eines Werkes zu sein.
+Der angelsächsische Begriff “public domain” wird mit **Gemeinfreiheit**
+übersetzt und bedeutet, dass der Urheber eines Werkes kein exklusives
+Nutzungsrecht hat (weil er schon lange gestorben ist oder explizit
+auf dieses Recht verzichtet) und das Werk somit von jedermann und
+ohne Genehmigung verwendet werden kann.
 
 ## How do you choose an appropriate license?
 

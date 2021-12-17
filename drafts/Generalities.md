@@ -461,6 +461,7 @@ are recommended for follow up:
 
 - EditorConfig at <https://editorconfig.org>
 - The Twelve-Factor App at <https://12factor.net>
+  (and company internal [presentation](https://github.com/ujr/presentations/tree/master/TwelveFactorApp))
 - OneFlow blog article at <https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow>
 - 3A–Arrange, Act, Assert at <https://xp123.com/articles/3a-arrange-act-assert>
 - Apache logging services at <http://logging.apache.org/>

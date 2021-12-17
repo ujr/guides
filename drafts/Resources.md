@@ -25,7 +25,11 @@
 - Microservice patterns at <https://microservices.io>
 - Best practices for RESTful APIs at <https://restfulapi.net/>
 - *Patterns of Enterprise Application Architecture* (PEAA) (Fowler, 2003)
+  ([author's page](https://martinfowler.com/books/eaa.html))
+  ([Amazon](https://www.amazon.com/dp/0321127420))
 - *Domain-Driven Design* (DDD) (Evans, 2003)
+  ([web page](https://www.domainlanguage.com/))
+  ([Amazon](https://www.amazon.com/dp/0321125215))
 - Many blogs address these topics, including [blog.ploeh.dk](https://blog.ploeh.dk)
 - The [arc42](https://arc42.org) software architecture
   documentation template
@@ -33,6 +37,7 @@
 ## Coding
 
 - *Design Patterns* (Gamma et al., 1994) (dt. Entwurfsmuster)
+  ([Amazon](https://www.amazon.com/dp/0201633612))
 - <https://clean-code-developer.com> •
   “more professionalisim in software development”
 - <https://clean-code-developer.de> • das selbe auf Deutsch
@@ -41,7 +46,8 @@
   Algorithms and Data Structures* (Paul E. Black, ed., since at least 1998)
 - Style and Coding guides (e.g.
   [PEP-8](https://www.python.org/dev/peps/pep-0008/) for Python,
-  *[Framework Design Guideines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/)* for .NET)
+  [Framework Design Guideines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/)
+  for .NET)
 - [Convention over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration)
 - Project templates (...)
 - Use [EditorConfig.org](https://editorconfig.org) for basic formatting
@@ -49,6 +55,19 @@
 ## Testing
 
 - TODO
+- Methodologies
+  (à la TDD (unit test first), BDD (given-when-then), ATDD (acceptance))
+- Concepts
+  (unit/integration/system/performance/load/UI/penetration/smoke/end-to-end)
+- Patterns and best practices
+  (3A, UI vs “headless”, generating test data, etc.)
+- Tools (like [xUnit.net](https://xunit.net) for .NET, ...)
+
+## Documentation
+
+- TODO
+- Concepts (README, project wiki, printed/printable docs, ...)
+- Tools and frameworks (arc42.org, ...)
 
 ## Security
 
@@ -87,11 +106,25 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
   [Git](https://git-scm.com),
   [Fossil](https://fossil-scm.org)
 - Branching schemes:
-  [OneFlow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow), 
+  [OneFlow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow),
   [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/)
 - Cloud: [GitHub](https://github.com),
   [Azure DevOps](https://dev.azure.com),
   [GitLab](https://about.gitlab.com)
+- Continuous Integration (CI): fully automated build, including
+  automated tests; can be as simple as a well-written
+  [Makefile](https://makefiletutorial.com/), or using an
+  on-premise build server like [Jenkins](https://www.jenkins.io/),
+  or run on cloud-based services like
+  [GitHub Actions](https://github.com/features/actions); see also at
+  [Wikipedia](https://en.wikipedia.org/wiki/Continuous_integration)
+- Continuous Delivery (CD): extends CI by also including automated
+  delivery to a test environment, maybe even a production environment.
+- Continuous Deployment (CD): the same as continuous delivery, but
+  implies even more “continuousness” and automation to the point
+  where every change (that does not cause a failed test) is put to
+  production; the concept of a “release” no longer applies.
+- More common DevOps tools: Ansible, Puppet, Chef, ...
 
 ## Methods
 
@@ -99,6 +132,9 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
 - Agile: Scrum, XP, Kanban, ... (iterations)
   ([Agile Manifesto](http://agilemanifesto.org/))
 - Others: Big Bang, Pair Programming, Code Reviews (Pull Requests)
+- Open Source: see [opensource.guide](https://opensource.guide) and
+  read [The Cathedral & the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/)
+  ([Amazon](https://www.amazon.com/dp/0596001088))
 
 ## Knowledge
 
