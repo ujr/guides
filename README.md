@@ -14,7 +14,18 @@ is not an aim—rather this repository is just a container
 for the materials that accumulate from pursuing my work.
 Feel free to adapt and use them as you see fit.
 
+General guides:
+
+- [General Guidelines](./guides/Generalities.md)
+- [Copyright and Licensing](./guides/CopyrightLicensing.md)
+
+Specific guides:
+
 - [Markdown Style Guide](./guides/MarkdownStyle.md)
+
+Further resources:
+
+- [Glossary](./guides/Glossary.md) of coding terms
 
 Drafts: look into the [drafts/](./drafts) folder
 

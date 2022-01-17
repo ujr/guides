@@ -7,23 +7,24 @@ to any particular programming language or technology.
 Guidelines are heuristics to help write good programs;
 they are not strict rules. Always use your own judgement.
 
-1. Principles
-1. Complexity
-1. Codebase
-1. Dependencies
-1. Configuration
-1. Automation
-1. Formatting
-1. Naming
-1. Comments
-1. Versioning
-1. Testing
-1. Documentation
-1. Licensing
-1. Rationale
-1. Bibliography and References
-1. Appendix: Pike on Complexity
-1. Appendix: Your Project Guidelines
+**Contents:**
+[Principles](#principles) •
+[Complexity](#complexity) •
+[Codebase](#codebase) •
+[Dependencies](#dependencies) •
+[Configuration](#configuration) •
+[Automation](#automation) •
+[Formatting](#formatting) •
+[Naming](#naming) •
+[Comments](#comments) •
+[Versioning](#versioning) •
+[Testing](#testing) •
+[Documentation](#documentation) •
+[Licensing](#licensing) •
+[Rationale](#rationale) •
+[Bibliography and References](#bibliography-and-references) •
+[Appendix: Pike on Complexity](#appendix-pike-on-complexity) •
+[Appendix: Your Project Guidelines](#appendix-your-project-guidelines)
 
 ## Principles
 
@@ -365,9 +366,10 @@ Some general guidelines apply nevertheless:
 - set copyright year and copyright owner as appropriate
 - follow your employer's requirements and guidelines
 - do not add a license at the start of each source file
+  (or, if you have to, just a one-line reference to the license)
 - for maximum reusability, choose a permissive open-source license
   (MIT or BSD or Apache) or release your software into the public
-  domain (use The Unlicense).
+  domain (using The Unlicense).
 
 ## Rationale
 
@@ -530,7 +532,7 @@ Therefore, it should prove useful to build project guidelines in
 layers, e.g. like this:
 
 1. Project-specific guidelines (stored in codebase)
-2. Language/technology-specific guidelines
+2. Technology-specific guidelines
    (referenced from project guidelines)
 3. General programming guidelines such as this document
    (referenced from project guidelines)

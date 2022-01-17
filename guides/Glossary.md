@@ -10,6 +10,11 @@ or copy relevant entries into your project documentation. Within
 your project documentation, you probably want to add terms from
 your project's application domain.
 
+1. [Abbreviations](#abbreviations)
+1. [Methodologies](#methodologies)
+1. [Concepts](#concepts)
+1. [Dictionary](#dictionary)
+
 ## Abbreviations
 
 Software programming abounds with abbreviations and acronyms.
@@ -267,6 +272,11 @@ business concerns of a system. Typical examples include:
 logging, caching, security, error handling, persistence,
 transactions.
 
+**Daemon** /di:mən/: a process running in the background (no user
+interaction) and providing a well-defined *service*, such as web
+server. Unix term, mythically short for *disk and execution monitor*,
+otherwise typically referred to as a *service*.
+
 **Decorator:** a structural *design pattern*, where an existing
 component is wrapped. Differs from the *Adapter* in that a
 Decorator modifies the wrapped component's functionality.
@@ -403,14 +413,24 @@ of wrappers.
 
 ## Dictionary
 
+Many of the technical terms can remain in English when used
+in other languages, even if there are equivalent terms. This
+may not be the stylistically optimal solution, but certainly
+the most practical because it often avoids ambiguity and helps
+with Internet searches.
+
 | English | German |
 |---|---|
-| Artifact | Artefakt |
-| Cohesion | innerer Zusammenhalt |
-| Concern | Belang |
-| Crosscutting | Querschnitts- |
-| Deployment | Softwareverteilung |
+| Artifact       | Artefakt |
+| Cohesion       | innerer Zusammenhalt |
+| Concern        | Belang |
+| Crosscutting   | Querschnitts- |
+| Daemon         | Daemon, Dämon, Dienst |
+| Deployment     | Softwareverteilung |
 | Design pattern | Entwurfsmuster |
-| Interface | Schnittstelle |
-| Pattern | Muster |
-| Rationale | Begründung |
+| Encapsulation  | Kapselung |
+| Interface      | Schnittstelle |
+| Pattern        | Muster |
+| Proxy          | Stellvertreter |
+| Rationale      | Begründung |
+| Service        | Dienst |

@@ -71,6 +71,8 @@ ohne Genehmigung verwendet werden kann.
 
 ## Recommendations
 
+- First discuss with your company or colleagues.
+
 - If you can and want to go open source, consider the
   **MIT License** and read this interesting and approachable
   [line-by-line legal explanation](https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html).
@@ -92,8 +94,10 @@ um Open Source Software ist: Till Jaeger und Axel Metzger:
 
 ## Summary
 
-Having no license on a codebase makes it legally impossible
-to use it because strong copyright protection is the default.
+If your code is propriatary, consult with your legal department.
+If your code is going to be open source, beware that having
+no license on a codebase makes it legally impossible to use
+it because strong copyright protection is the default.
 Therefore, include a license that grants actors besides the
 originator the right to use your code for the stated purposes
 and under the stated conditions. Place the license text in a

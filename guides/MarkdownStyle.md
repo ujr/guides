@@ -46,7 +46,7 @@ of the plain text. They are certainly subjective.
   (not portable, stay away).
 - Underlining is not generally offered; stay away.
 
-You may have to escape an underscore or an asterisk
+You *may* have to escape an underscore or an asterisk
 if they occur literally in your text: `foo\_bar`.
 Use `***triple***` to get ***triple*** (bold and italic).
 Note that `**` translates to `<strong>` (not `<b>`)
@@ -61,7 +61,7 @@ and `*` translates to `<em>` (not `<i>`).
 - Prefer ATX-style `#` and `##` for H1 and H2
   over underlining (`===` and `---`)
 - Put a blank between the hash(es) and the heading text
-  (`#Title` not `#Title`)
+  (`# Title` not `#Title`)
 
 Underlining headings may look better in plain text,
 but `#` and `##` are easier to maintain and most
@@ -102,6 +102,11 @@ Opt for easy maintainability.
 - Use four-space indenting for short snippets,
   especially if many in sequence.
 - Inline code goes between single backticks: `int foo;`
+- Use two (or more) backticks if code contains a backtick
+  (e.g. ``` ``oct`31`` ```); begin and end with a blank if
+  code begins or ends with a backtick (e.g. ``` ` `` ` ```);
+  the Markdown source for this item made heavy use of this
+  capability.
 
 Backticks may be used to escape Markdown metacharacters
 (instead of the backslash; beware that you get the code font).
@@ -109,10 +114,11 @@ Backticks may be used to escape Markdown metacharacters
 ### Miscellaneous
 
 - Link to headings like this: `[link text](#document-layout)`
-  assuming there is a heading “Document Layout”. This is
+  assuming there is a heading “Document Layout”. Beware that
+  this is
   not part of the original Markdown and may not be supported.
-- Avoid HTML in Markdown documents.
-  Likely exceptions are `<sub>` and `<sup>`.
+- Avoid HTML in Markdown documents. Depending on your text,
+  there may be exceptions like `<sub>` and `<sup>`.
 - Complex or large tables are very hard to maintain.
   Consider lists instead.
 - Horizontal rules: prefer `---` over `***` and `___`.
@@ -168,7 +174,8 @@ guidelines above might look like this:
 
 ## EditorConfig
 
-An `.editorconfig` excerpt suitable for Markdown files:
+An `.editorconfig` excerpt suitable for Markdown files
+is shown below. Note that trailing white space is preserved.
 
 ```ini
 [*.md]
