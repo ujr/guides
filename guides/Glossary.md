@@ -331,6 +331,15 @@ more prosaically known as **feature creep,** the excessive
 addition and accumulation of features to a product, often
 far beyond creating any real value.
 
+**Heisenbug:** a bug in software that appears to disappear
+when being investigated; humorously named after Werner Heisenberg
+who stated that the act of observing always changes the system
+being observed. Heisenbugs are often caused by uninitialized
+variables. A typical example with .NET is that looking at the
+values of properties in the debugger may cause state changes
+that may affect program behaviour. (This is a good reason why
+property getters should not modify state.)
+
 A **heuristic** is a practical approach that is likely to
 solve a problem, but not guaranteed to succeed. Well known
 from the real world is the trial-and-error heuristic.
