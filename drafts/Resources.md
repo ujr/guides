@@ -31,6 +31,8 @@
   ([web page](https://www.domainlanguage.com/))
   ([Amazon](https://www.amazon.com/dp/0321125215))
 - Many blogs address these topics, including [blog.ploeh.dk](https://blog.ploeh.dk)
+- [Clean Architecture Cheat Sheet](https://www.bbv.ch/ueber-uns/publikationen/clean-architecture-prinzipien-und-methoden-im-ueberblick/)
+  (bbv Software Services, 2015)
 - The [arc42](https://arc42.org) software architecture
   documentation template
 
@@ -48,6 +50,8 @@
   [PEP-8](https://www.python.org/dev/peps/pep-0008/) for Python,
   [Framework Design Guideines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/)
   for .NET)
+- [Clean Code Cheat Sheet](https://www.bbv.ch/ueber-uns/publikationen/clean-code-prinzipien-und-umsetzung/)
+  (bbv Software Services, 2015)
 - [Convention over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration)
 - Project templates (...)
 - Use [EditorConfig.org](https://editorconfig.org) for basic formatting
@@ -61,6 +65,8 @@
   (unit/integration/system/performance/load/UI/penetration/smoke/end-to-end)
 - Patterns and best practices
   (3A, UI vs “headless”, generating test data, etc.)
+- [Clean TDD/ATDD Cheat Sheet](https://www.bbv.ch/ueber-uns/publikationen/clean-tdd-und-atdd-zusammengefasst/)
+  (bbv Software Services, 2015)
 - Tools (like [xUnit.net](https://xunit.net) for .NET, ...)
 
 ## Documentation
@@ -107,7 +113,8 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
   [Fossil](https://fossil-scm.org)
 - Branching schemes:
   [OneFlow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow),
-  [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/)
+  [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/),
+  see also [Trunk Based Development](https://trunkbaseddevelopment.com)
 - Cloud: [GitHub](https://github.com),
   [Azure DevOps](https://dev.azure.com),
   [GitLab](https://about.gitlab.com)

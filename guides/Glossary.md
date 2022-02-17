@@ -160,6 +160,14 @@ class diagrams (class hierarchies and associations), sequence
 diagrams (showing interactions along time), use case diagrams
 (a users's possible system interactions), and others.
 
+**UTF-8** = Unicode Transformation Format 8-bit, the (variable
+width) character encoding of choice for its many nice properties
+(sorts the same as the encoded charcter codes, introduces no
+extra null bytes, resynchronization is always possible, and ASCII
+is a subset). While at it: UTF-8 is an *encoding* (mapping numbers
+to bytes), while Unicode is a *charset* (character set, mapping
+characters to numbers); ASCII is both.
+
 **XP** = Extreme Programming, a software development methodology.
 
 ## Methodologies
@@ -350,6 +358,11 @@ with other specific microservices with the idea that it is easy
 to deploy and replace individual microservices (continuous deployment).
 Usually implemented as a single process in a *container*.
 
+**Murphy's Law:** everything that can go wrong will go wrong,
+so you better adopt defensive design and coding. (The origin
+and the link with Murphy is not entirely clear, but that is
+of little importance here.)
+
 **Observer:** a behavioral *design pattern* where subject
 object maintains a list of observer objects and notifies
 the observers of changes to the subject's state.
@@ -410,6 +423,13 @@ principles of SOLID.
 the business domain is implemented, as far as it is not part
 of the entities itself (usually because it relates to several
 entity types); services are stateless (apart from caching).
+
+**Silver Bullet:** a simple and effective solution to a problem;
+in practice, unfortunately, there is *No Silver Bullet* (Brooks 1986):
+no single development in technology (or management) will improve
+productivity by an order of magnitude within a decade. However,
+some developments such as modern high-level languages have
+certainly realized very impressive productivity gains.
 
 **Singleton:** a creational *design pattern*, where a class
 may only have one instance, called its singleton. For example,
