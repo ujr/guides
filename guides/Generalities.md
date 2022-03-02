@@ -114,6 +114,8 @@ automated tests can be run. Here are some guidelines:
 - avoid long-living branches (prefer [OneFlow][OneFlow] over
   [GitFlow][GitFlow] and be pragmatic, [GitHub flow][GitHubFlow]
   works with pull requests)
+- commit small coherent changes and commit often,
+  but do not commit half-done work
 
 The top-level of a codebase looks like this (or a subset):
 
@@ -390,6 +392,13 @@ sometimes “by history”, and sometimes there is a real reason.
   in Web projects there is a strong tendency to not use it.
   I chose to recommend against its use because it is invisible
   and serves no real purpose.
+
+- A source control system can be used for backup, but should
+  not. By making “semantic commits” (small but coherent changes,
+  not half-done work) you gain a readable history that helps
+  with retracing decisions and communicating with colleagues,
+  and you are less likely to isolate yourself on private
+  branches that get hard to merge back.
 
 - I like and recommend *.editorconfig* because it not only
   configures basic formatting rules, but also documents them

@@ -55,6 +55,15 @@
 - [Convention over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration)
 - Project templates (...)
 - Use [EditorConfig.org](https://editorconfig.org) for basic formatting
+- Know [regular expressions](https://en.wikipedia.org/wiki/Regular_expression);
+  beware that the details and capabilities differ between tools and libraries:
+  [.NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference),
+  [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html),
+  [Perl](https://perldoc.perl.org/perlrequick),
+  [AWK](https://www.gnu.org/software/gawk/manual/html_node/Regexp.html),
+  [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions),
+  or try online at [regexr.com](https://regexr.com)
+- Use [UTF-8 text encoding](https://utf8everywhere.org/) when you have a choice
 
 ## Testing
 
@@ -115,6 +124,8 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
   [OneFlow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow),
   [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/),
   see also [Trunk Based Development](https://trunkbaseddevelopment.com)
+- Learn to use Git's staging area and its capability to commit
+  only parts of a file
 - Cloud: [GitHub](https://github.com),
   [Azure DevOps](https://dev.azure.com),
   [GitLab](https://about.gitlab.com)
