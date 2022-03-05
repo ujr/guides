@@ -403,6 +403,13 @@ sometimes “by history”, and sometimes there is a real reason.
   I chose to recommend against its use because it is invisible
   and serves no real purpose.
 
+- A source control system can be used for backup, but should
+  not. By making “semantic commits” (small but coherent changes,
+  not half-done work) you gain a readable history that helps
+  with retracing decisions and communicating with colleagues,
+  and you are less likely to isolate yourself on private
+  branches that get hard to merge back.
+
 - I like and recommend *.editorconfig* because it not only
   configures basic formatting rules, but also documents them
   in a highly visible and readable way.

@@ -51,6 +51,7 @@
 - <https://developer.mozilla.org> • the Mozilla Web Dev Docs, comprehensive
 - <https://xlinux.nist.gov/dads/> • the NIST *Dictionary of
   Algorithms and Data Structures* (Paul E. Black, ed., since at least 1998)
+- Establish code conventions and provide project templates
 - Style and Coding guides (e.g.
   [PEP-8](https://www.python.org/dev/peps/pep-0008/) for Python,
   [Framework Design Guideines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/)
@@ -58,7 +59,15 @@
 - [Clean Code Cheat Sheet](https://www.bbv.ch/ueber-uns/publikationen/clean-code-prinzipien-und-umsetzung/)
   (bbv Software Services, 2015)
 - [Convention over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration)
-- Establish code conventions and provide project templates
+- Know [regular expressions](https://en.wikipedia.org/wiki/Regular_expression);
+  beware that the details and capabilities differ between tools and libraries:
+  [.NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference),
+  [POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html),
+  [Perl](https://perldoc.perl.org/perlrequick),
+  [AWK](https://www.gnu.org/software/gawk/manual/html_node/Regexp.html),
+  [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions),
+  or try online at [regexr.com](https://regexr.com)
+- Use [UTF-8 text encoding](https://utf8everywhere.org/) when you have a choice
 - Use [EditorConfig.org](https://editorconfig.org) for
   basic formatting conventions
 
@@ -125,6 +134,8 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
   [OneFlow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow),
   [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/),
   see also [Trunk Based Development](https://trunkbaseddevelopment.com)
+- Learn to use Git's staging area and its capability to commit
+  only parts of a file
 - Cloud: [GitHub](https://github.com),
   [Azure DevOps](https://dev.azure.com),
   [GitLab](https://about.gitlab.com)

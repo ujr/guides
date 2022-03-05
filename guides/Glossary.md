@@ -15,6 +15,7 @@ your project's application domain.
 1. [Concepts](#concepts)
 1. [Dictionary](#dictionary)
 
+
 ## Abbreviations
 
 Software programming abounds with abbreviations and acronyms.
@@ -175,6 +176,7 @@ characters to numbers); ASCII is both.
 
 **XP** = Extreme Programming, a software development methodology.
 
+
 ## Methodologies
 
 Once the basic technological apsects of programming were
@@ -217,6 +219,7 @@ and Large-Scale Scrum (LeSS), among others.
 **Waterfall,** the sequential execution of plan-design-build-test-deploy.
 The problem is, that by the time the planning of an entire system
 is done, the entire system according to plan may be obsolete.
+
 
 ## Concepts
 
@@ -388,6 +391,13 @@ caching, precondition checking.
 should always be documented, the rationale is optional (though
 useful, but may be kept in a separate section).
 
+**Regex:** short for regular expression, a language that can
+build patterns to be compared against texts to find interesting
+parts. Supports regular languages, thus arbitrary nested structures
+cannot be found. Still a very powerful tool. Available in most
+programming libraries and many end-user tools, such as your editor.
+Basic syntax is quite uniform across tools, but details vary.
+
 **Registry:** a well-known object that other objects use
 to find common objects (such as services). The registry
 itself is usually a singleton. Be careful to not subvert
@@ -444,6 +454,7 @@ a *registry* is typically implemented as a singleton.
 is wrapped inside the wrapper component. Wrapper is considered
 a general term; *adapter*, *decorator*, and *proxy* are types
 of wrappers.
+
 
 ## Dictionary
 
