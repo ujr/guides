@@ -19,6 +19,7 @@ they are not strict rules. Always use your own judgement.
 [Comments](#comments) •
 [Versioning](#versioning) •
 [Testing](#testing) •
+[Cross-cutting Concerns](#cross-cutting-concerns) •
 [Documentation](#documentation) •
 [Licensing](#licensing) •
 [Rationale](#rationale) •
@@ -60,6 +61,7 @@ On the design level,
 - beware of abstraction abundance
 - avoid deep class hierarchies
 - prefer composition over inheritance
+- separate construction (or startup) from use
 
 On the algorithmic level, follow these well-known aphorisms:
 
@@ -110,6 +112,8 @@ automated tests can be run. Here are some guidelines:
 - prefer flat file structures over deep nesting
 - consider having a “commons” area for reusable components
   (you may reuse them in your other projects)
+- commit small and coherent changes (“semantic” commits)
+- commit often, but not half-done work
 - keep the source control system history as linear as possible
 - avoid long-living branches (prefer [OneFlow][OneFlow] over
   [GitFlow][GitFlow] and be pragmatic, [GitHub flow][GitHubFlow]
@@ -301,11 +305,12 @@ APIs later on (in this sense they are also called *boundary tests*).
 - ignore them on automatic execution if they are known to break
 
 Testing is surrounded by a number of **methodologies** including
-TDD (write unit test first), BDD (behaviour: given-when-then),
-ATDD (acceptance tests first). You often cannot afford strictly
-following some methodology, but you should know they exist. Note
-that the 3A pattern (arrange-act-assert, aka build-operate-check)
-is somewhat equivalent of BDD's given-when-then pattern.
+TDD (test-driven development: write unit test first), BDD (behaviour:
+given-when-then), ATDD (acceptance tests first). You often cannot
+afford strictly following some methodology, but you should know they
+exist. Note that the 3A pattern (arrange-act-assert, also known as
+build-operate-check) is somewhat equivalent of BDD's given-when-then
+pattern.
 
 ## Cross-cutting Concerns
 
@@ -349,6 +354,13 @@ Some general guidelines apply nevertheless:
 - do serious (penetration) testing
 - look at security from an architectural point of view:
   define at what layer what access controls apply
+
+**Startup** (or construction) is a concern on its own and
+shall be saparated from the *use* of a system. Lazy initialization
+of the form `if service is null then service = new Service()`
+creates hard-coded dependencies and impedes testing. Separate
+construction from use by (1) separation of main, (2) use of
+factories, and (3) dependency injection.
 
 ## Documentation
 

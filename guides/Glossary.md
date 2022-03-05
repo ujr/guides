@@ -122,6 +122,11 @@ represent some state (like a file on the server).
 templates, and documentation to build applications for some
 platform.
 
+**SDLC** = Software Development Life Cycle, the phases a software
+development effort goes through, maybe in overlapping iterations.
+Typically comprises some or most of: plan, requirements, design,
+prototype, development, test, deploy, operate, maintain.
+
 **SOLID** = an acronym for five common design principles
 in (mostly object-oriented) programming:
 
