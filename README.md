@@ -25,7 +25,9 @@ Specific guides:
 
 Further resources:
 
+- [Resources](./guides/Resources.md) for daily coding
 - [Glossary](./guides/Glossary.md) of coding terms
+- [Culture](./guides/Culture.md) of programming
 
 Drafts: look into the [drafts/](./drafts) folder
 

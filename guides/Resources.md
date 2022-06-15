@@ -16,14 +16,17 @@
   in many languages
 - [Can I use?](https://caniuse.com) at <https://caniuse.com>
   provides Browser compatibility tables
+- Popular interview questions by technology at <https://github.com/FAQGURU>
 - The [comp.lang.c FAQ](http://c-faq.com/) at <http://c-faq.com/>
 
 ## Architecture & Design
 
 - Best practices for SaaS (web apps) at <https://12factor.net>
   (The Twelve-Factor App)
+- Collection of architectural patterns at <https://patterns.arc42.org>
 - Microservice patterns at <https://microservices.io>
 - Best practices for RESTful APIs at <https://restfulapi.net/>
+- Web: MPA, SPA, RWD, PWA
 - *Patterns of Enterprise Application Architecture* (PEAA) (Fowler, 2003)
   ([author's page](https://martinfowler.com/books/eaa.html))
   ([Amazon](https://www.amazon.com/dp/0321127420))
@@ -33,6 +36,8 @@
 - Many blogs address these topics, including [blog.ploeh.dk](https://blog.ploeh.dk)
 - [Clean Architecture Cheat Sheet](https://www.bbv.ch/ueber-uns/publikationen/clean-architecture-prinzipien-und-methoden-im-ueberblick/)
   (bbv Software Services, 2015)
+- [Unified Modeling Language](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
+  (UML); [Violet](https://horstmann.com/violet/) is an easy UML editor
 - The [arc42](https://arc42.org) software architecture
   documentation template
 
@@ -46,6 +51,7 @@
 - <https://developer.mozilla.org> • the Mozilla Web Dev Docs, comprehensive
 - <https://xlinux.nist.gov/dads/> • the NIST *Dictionary of
   Algorithms and Data Structures* (Paul E. Black, ed., since at least 1998)
+- Establish code conventions and provide project templates
 - Style and Coding guides (e.g.
   [PEP-8](https://www.python.org/dev/peps/pep-0008/) for Python,
   [Framework Design Guideines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/)
@@ -53,8 +59,6 @@
 - [Clean Code Cheat Sheet](https://www.bbv.ch/ueber-uns/publikationen/clean-code-prinzipien-und-umsetzung/)
   (bbv Software Services, 2015)
 - [Convention over Configuration](https://en.wikipedia.org/wiki/Convention_over_configuration)
-- Project templates (...)
-- Use [EditorConfig.org](https://editorconfig.org) for basic formatting
 - Know [regular expressions](https://en.wikipedia.org/wiki/Regular_expression);
   beware that the details and capabilities differ between tools and libraries:
   [.NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expression-language-quick-reference),
@@ -64,14 +68,18 @@
   [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions),
   or try online at [regexr.com](https://regexr.com)
 - Use [UTF-8 text encoding](https://utf8everywhere.org/) when you have a choice
+- Use [EditorConfig.org](https://editorconfig.org) for
+  basic formatting conventions
 
 ## Testing
 
-- TODO
-- Methodologies
-  (à la TDD (unit test first), BDD (given-when-then), ATDD (acceptance))
-- Concepts
-  (unit/integration/system/performance/load/UI/penetration/smoke/end-to-end)
+- [Software testing](https://en.wikipedia.org/wiki/Software_testing)
+  on Wikipedia
+- Level of testing: unit, integration, system, acceptance
+- Further types: smoke, performance, load, UI, penetration, end-to-end
+- Testing party: alpha (software producer), beta (freindly end users)
+- Methodologies: TDD (unit tests first), BDD (given-when-then),
+  ATDD (acceptance test driven development)
 - Patterns and best practices
   (3A, UI vs “headless”, generating test data, etc.)
 - [Clean TDD/ATDD Cheat Sheet](https://www.bbv.ch/ueber-uns/publikationen/clean-tdd-und-atdd-zusammengefasst/)
@@ -93,7 +101,7 @@
 
 ## UI/UX
 
-- <https://material.io> • Google's Material Design (since 2014)
+- <https://material.io> – Google's Material Design (since 2014)
 
 ## Licensing
 
@@ -120,6 +128,8 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
 - Software configuration management:
   [Git](https://git-scm.com),
   [Fossil](https://fossil-scm.org)
+- Git's staging area and its ability to commit parts of files
+  will help with “semantic” commits for a readable history
 - Branching schemes:
   [OneFlow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow),
   [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/),
@@ -146,8 +156,8 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
 
 ## Methods
 
-- Waterfall (phases)
-- Agile: Scrum, XP, Kanban, ... (iterations)
+- Waterfall (linear development in phases)
+- Agile: Scrum, XP, Kanban, ... (development in iterations)
   ([Agile Manifesto](http://agilemanifesto.org/))
 - Others: Big Bang, Pair Programming, Code Reviews (Pull Requests)
 - Open Source: see [opensource.guide](https://opensource.guide) and
@@ -164,6 +174,8 @@ Build, Test, Package, Release, Deploy, Configure, Monitor.
   (and while there also *The Cathedral & the Bazaar*)
 - *The Mythical Man Month. Essays on Software Engineering*
   (Fred Brooks, 1975, 1982, 1995)
+- [Book of Modern Frontend Tooling](https://tooling.github.io/book-of-modern-frontend-tooling/)
+  is unfortunately no longer maintained
 - Berufe der ICT: branchenübliche Berufsbilder, zusammengestellt
   vom Branchenverband swissICT auf <https://www.berufe-der-ict.ch>
 
@@ -177,4 +189,6 @@ Here is a very small and mostly random selection.
 - <https://www.isaqb.org> training and certification for software architects
 - <https://www.lpi.org> The Linux Professional Institute
 - <https://scrum.org> offers Scrum certifications
+- <https://www.istqb.org> certifications for software testers
+- <https://swisstestingboard.org> the Swiss branch of ISTQB
 - Microsoft, AWS, etc.
