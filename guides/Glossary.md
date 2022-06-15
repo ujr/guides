@@ -111,7 +111,8 @@ system by storing and retrieving objects in the database.
 **POJO** = Plain Old Java Object, an ordinary object,
 without any special attributes nor special inheritance, thus not
 following any special conventions besides those imposed by the
-runtime (CLR or JVM) itself. Plain Old Objects are a good thing!
+runtime (CLR or JVM) itself. Plain Old Objects play nicely with
+dependency injection and are a good thing!
 
 **REST** = Representational State Transfer, a widely accepted
 architectural style for creating Web APIs where, roughly speaking,
@@ -355,6 +356,14 @@ A **heuristic** is a practical approach that is likely to
 solve a problem, but not guaranteed to succeed. Well known
 from the real world is the trial-and-error heuristic.
 
+**Layer:** a logical separation within an application or system.
+Typical application layers are: UI (User Interface), BLL (Business
+Logic Layer), and DAL (Data Access Layer). Compare **tier**.
+
+**Tier:** a separate physical deployment target (executable,
+service, container) of an application or system. Traditionally,
+many **layers** are deployed as a single tier.
+
 **Microservice:** a lightweight and specific service component
 in a kind of a service-oriented architecture that communicates
 with other specific microservices with the idea that it is easy
@@ -409,6 +418,15 @@ to improve the internal design towards some design guidelines.
 retrieves, stores, and deletes entities (domain objects).
 Also refers to the managed folder that contains the codebase,
 managed by source control systems such as Git or Fossil.
+
+**Scaling:** adapting a system to handle more (or less)
+load (users, requests, clients). **Scaling up** or *vertical*
+scaling means to increase the capacity of a single machine,
+whereas **scaling out** or *horizontal* scaling means to
+add more instances of the same type. Horizontal scaling
+requires some form of load balancing and tends to be more
+complicated, but can provide fault tolerance and may lower
+latency.
 
 **Security** is a large topic and not really covered here.
 The first question is: what are the goals of security? And the
