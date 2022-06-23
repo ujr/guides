@@ -22,6 +22,17 @@ General guides:
 Specific guides:
 
 - [Markdown Style Guide](./guides/MarkdownStyle.md)
+- *Fossil Coding Style:*
+  [origin](https://fossil-scm.org/home/doc/tip/www/style.wiki)
+  and [local copy](./share/FossilCodingStyle.md)
+- *Standards and Style for Coding in ANSI C* (Jim Larson 1996):
+  once at <http://www.jetcafe.org/jim/c-style.html>
+  and [local copy](./share/LarsonStyleC.md).
+  In my humble experience, avoid tabs in favor of spaces, and
+  “const poisoning” is not as bad as it sounds.
+- *Notes on Programming in C* (Rob Pike 1989):
+  [archived at Lysator](https://www.lysator.liu.se/c/pikestyle.html)
+  and [local copy](./share/PikeStyle.md)
 
 Further resources:
 
