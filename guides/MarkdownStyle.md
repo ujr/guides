@@ -7,7 +7,7 @@ This document is a style guide for writing Markdown.
 2. [Guidelines](#guidelines)
 3. [Markdownlint](#markdownlint)
 4. [EditorConfig](#editorconfig)
-5. [References](#references)
+5. [See also](#see-also)
 
 
 ## Background
