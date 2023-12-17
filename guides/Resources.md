@@ -91,6 +91,9 @@
 - TODO
 - Concepts (README, project wiki, printed/printable docs, ...)
 - Tools and frameworks (arc42.org, ...)
+- Software Bill of Materials (SBOM): SPDX at <https://spdx.dev> is a standard
+  format for an SBOM (there are others); a good introduction (in German) is at
+  <https://www.csoonline.com/de/a/amp/was-ist-eine-software-bill-of-materials,3674040>
 
 ## Security
 

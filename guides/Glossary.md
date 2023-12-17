@@ -120,6 +120,11 @@ a client interacts with a server by applying the HTTP verbs
 (GET, POST, PUT, DELETE) to server resources (URLs) that
 represent some state (like a file on the server).
 
+**SBOM** = Software Bill of Materials, a list of components
+that make up a software product, useful (or even required)
+for security and legal (license compatibility) purposes.
+(Unrelated to BOM, which is the Byte Order Mark of Unicode.)
+
 **SDK** = Software Development Kit, a set of tools, libraries,
 templates, and documentation to build applications for some
 platform.
@@ -365,10 +370,6 @@ from the real world is the trial-and-error heuristic.
 Typical application layers are: UI (User Interface), BLL (Business
 Logic Layer), and DAL (Data Access Layer). Compare **tier**.
 
-**Tier:** a separate physical deployment target (executable,
-service, container) of an application or system. Traditionally,
-many **layers** are deployed as a single tier.
-
 **Microservice:** a lightweight and specific service component
 in a kind of a service-oriented architecture that communicates
 with other specific microservices with the idea that it is easy
@@ -468,6 +469,10 @@ certainly realized very impressive productivity gains.
 may only have one instance, called its singleton. For example,
 a *registry* is typically implemented as a singleton.
 
+**Tier:** a separate physical deployment target (executable,
+service, container) of an application or system. Traditionally,
+many **layers** are deployed as a single tier.
+
 **Wrapper:** a design pattern where an existing component
 is wrapped inside the wrapper component. Wrapper is considered
 a general term; *adapter*, *decorator*, and *proxy* are types
@@ -484,16 +489,17 @@ with Internet searches.
 
 | English | German |
 |---|---|
-| Artifact       | Artefakt |
-| Cohesion       | innerer Zusammenhalt |
-| Concern        | Belang |
-| Crosscutting   | Querschnitts- |
-| Daemon         | Daemon, Dämon, Dienst |
-| Deployment     | Softwareverteilung |
-| Design pattern | Entwurfsmuster |
-| Encapsulation  | Kapselung |
-| Interface      | Schnittstelle |
-| Pattern        | Muster |
-| Proxy          | Stellvertreter |
-| Rationale      | Begründung |
-| Service        | Dienst |
+| Artifact          | Artefakt |
+| Bill of Materials | Stückliste |
+| Cohesion          | innerer Zusammenhalt |
+| Concern           | Belang |
+| Crosscutting      | Querschnitts- |
+| Daemon            | Daemon, Dämon, Dienst |
+| Deployment        | Softwareverteilung |
+| Design pattern    | Entwurfsmuster |
+| Encapsulation     | Kapselung |
+| Interface         | Schnittstelle |
+| Pattern           | Muster |
+| Proxy             | Stellvertreter |
+| Rationale         | Begründung |
+| Service           | Dienst |
