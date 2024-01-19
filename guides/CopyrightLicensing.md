@@ -51,6 +51,7 @@ Nutzungsrecht hat (weil er schon lange gestorben ist oder explizit
 auf dieses Recht verzichtet) und das Werk somit von jedermann und
 ohne Genehmigung verwendet werden kann.
 
+
 ## How do you choose an appropriate license?
 
 1. Make sure that you have a choice:
@@ -63,11 +64,13 @@ ohne Genehmigung verwendet werden kann.
    - Copyleft open-source license (the GPL licenses)
    - Public domain (consider The Unlicense)
    - No license (not recommended)
+   - Check compatibility with licenses of components (libraries, packages)
 3. Resources for choosing an open-source license:
    - <https://choosealicense.com>
    - <https://opensource.org/licenses>
    - <https://tldrlegal.com>
    - <https://unlicense.org> – also has pointers to background information
+
 
 ## Recommendations
 
@@ -92,6 +95,24 @@ um Open Source Software ist: Till Jaeger und Axel Metzger:
 *Open Source Software. Rechtliche Rahmenbdingungen der Freien Software*.
 5. Auflage, C.H.Beck, 2020. [Amazon](https://www.amazon.de/dp/3406734979)
 
+
+## Considerations for Containerized Deployments
+
+When an application is deployed as a container image, it is
+distributed together with middleware and an operating system.
+Documentation should include (or reference) the licenses of all
+components distributed with the image (this could be part of a
+“software bill of materials” or SBOM). It is common practice
+to divide the list of licenses into a section for the application
+(upper layers in the image) and a section for all the other
+container components (lower layers in the image). This is
+because applications are *not* considered derivative works
+of operating systems or middleware such as Java or .NET and
+therefore compatible with their licenses (which are often
+restrictive copyleft licenses due to the prevalence of GNU
+and Linux as the operating system).
+
+
 ## Summary
 
 If your code is propriatary, consult with your legal department.
@@ -107,9 +128,14 @@ Last but not least: I'm not a lawyer. The statements above
 may be wrong. I ask you to carefully check them on your own
 and I disclaim all responsibility.
 
+
 ## References
 
 The notes on the history of copyright in the first paragraph
 are a highly condensed summary of Karl Fogel's article on
 *The Surprising History of Copyright ...*
 at <https://questioncopyright.org/promise>.
+
+The considerations for containerized deployments are aligned with
+the blog article “Containers and Open Source License Compliance” at
+<https://fossa.com/blog/containers-open-source-license-compliance/>.
