@@ -5,7 +5,7 @@
 
 - StackExchange at <https://stackexchange.com/>,
   a large Q&A site on many topics
-- StackOverflow at <https://stackoverflow.com/>
+- StackOverflow at <https://stackoverflow.com/>v
   is the StackExchange for programming Q&A
 - Code Project at <https://www.codeproject.com/>,
   a community site with articles and source code
@@ -25,7 +25,9 @@
   (The Twelve-Factor App)
 - Collection of architectural patterns at <https://patterns.arc42.org>
 - Microservice patterns at <https://microservices.io>
-- Best practices for RESTful APIs at <https://restfulapi.net/>
+- Best practices for RESTful APIs at <https://restfulapi.net/> and at
+  <http://apiguide.readthedocs.org/> from the Australian Goverment's
+  Digital Transformation Office
 - Web: MPA, SPA, RWD, PWA
 - *Patterns of Enterprise Application Architecture* (PEAA) (Fowler, 2003)
   ([author's page](https://martinfowler.com/books/eaa.html))
