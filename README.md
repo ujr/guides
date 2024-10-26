@@ -22,6 +22,7 @@ General guides:
 Specific guides:
 
 - [Markdown Style Guide](./guides/MarkdownStyle.md)
+- [Common Patterns in C#](./drafts/PatternsCSharp.md) (DRAFT)
 - [JavaScript Style Guide](./guides/JavaScriptStyle.md) (for small projects)
 - *Fossil Coding Style:*
   [origin](https://fossil-scm.org/home/doc/tip/www/style.wiki)
