@@ -31,6 +31,21 @@ it makes control flow visible from the caller.
 
 ## Thread-safe Singleton
 
+Eager instantiation (create the single instance when the class is loaded):
+
+```C#
+public sealed class Singleton
+{
+    private static readonly Singleton _instance = new Singleton();
+
+    private Singleton() {}  // private to prevent instantiation
+
+    public static Singleton Instance => _instance;
+}
+```
+
+Lazy instantiation (create the single instance on first access):
+
 ```C#
 public sealed class Singleton                    // prevent derivation
 {
