@@ -40,8 +40,8 @@
   (bbv Software Services, 2015)
 - [Unified Modeling Language](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
   (UML); [Violet](https://horstmann.com/violet/) is an easy UML editor
-- The [arc42](https://arc42.org) software architecture
-  documentation template
+- The [arc42](https://arc42.org) software architecture documentation
+  template and a discussion at <https://www.embarc.de/themen/arc42/>
 
 ## Coding
 
@@ -69,6 +69,10 @@
   [AWK](https://www.gnu.org/software/gawk/manual/html_node/Regexp.html),
   [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions),
   or try online at [regexr.com](https://regexr.com)
+- <https://floating-point-gui.de/> • What every programmer should know
+  about floating-point arithmetic (a simplified and programming-oriented
+  version of the similarly named 1991 paper by David Goldberg) • and an
+  interactive visualization <https://bartaz.github.io/ieee754-visualization/>
 - Use [UTF-8 text encoding](https://utf8everywhere.org/) when you have a choice
 - Use [EditorConfig.org](https://editorconfig.org) for
   basic formatting conventions
