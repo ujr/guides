@@ -73,6 +73,7 @@
   about floating-point arithmetic (a simplified and programming-oriented
   version of the similarly named 1991 paper by David Goldberg) • and an
   interactive visualization <https://bartaz.github.io/ieee754-visualization/>
+- Command line interface (CLI) guidelines at [clig.dev](https://clig.dev/)
 - Use [UTF-8 text encoding](https://utf8everywhere.org/) when you have a choice
 - Use [EditorConfig.org](https://editorconfig.org) for
   basic formatting conventions
